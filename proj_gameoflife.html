@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Anne Dekker</h2>
+    <h1>CONWAY'S GAME OF LIFE</h1>
+  </header>
+  <nav>
+    <a href="index.html">Projects</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="projdiv">
+    <img src="resources/thunderbird.png" alt="A screenshot of the program">
+    <p>The Game of Life is a kind of simulation developed by John H. Conway, a British mathematician. It's a cellular automaton, which is a mathematical model of behavior based on some very simple rules.</p>
+    <p>You play the game on an infinite grid, consisting of cells that can be either dead or alive. Before you start playing, you select which cells you want to be alive in the first generation.
+      Then you run the simulation. Every time you make a new generation you follow these rules:</p>
+    <ul>
+      <li>If a cell has less than 2 neighbours, it dies from underpopulation</li>
+      <li>If a cell has more than 3 neighbours, it dies from overpopulation</li>
+      <li>If a dead cell has 3 live neighbours, it is born</li>
+    </ul>
+    <p>(Of course you can change these rules when running the program)</p>
+    <p>Patterns that emerged using the game have been used in a variety of disciplines, from the computer sciences to the life sciences, because of the surprising structures that can evolve from what
+      is essentially a chaotic system of loose parts.</p>
+    <img src="resources/queenbeeextra.png" alt="Another screenshot of the program">
+    <h3>Manual</h3>
+    <p>In the bottom of the screen you can see the menu bar. On the right are the time controls, in the middle are the field controls, and on the left are settings.</p>
+    <h4>Time Controls</h4>
+    <p><span class="title">Next :</span> Generates the next generation</p>
+    <p><span class="title">Start/Stop :</span> Start or stop automatically making new generations. The speed can be selected in settings.</p>
+    <h4>Field Controls</h4>
+    <p><span class="title">Random :</span> Generate a random field, with the size selected in settings.</p>
+    <p><span class="title">Load :</span> Load the pattern selected in the box in the field.</p>
+    <p><span class="title">Clear :</span> Remove all cells from the field</p>
+  </div>
+  <footer>
+    <p>A website by Anne Dekker (duh) made in 2018</p>
+    <p>I should probably credit the people who made the fonts here</p>
+  </footer>
+</body>
+</html>
