@@ -1,3 +1,87 @@
 body {
+  background: #222222;
+  color: #cccccc;
+  font-family: "Crimson Text", serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 0px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+header {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #cccccc;
+  text-decoration: none;
+}
+
+.projdiv, .projcontent {
     background-color: #cccccc;
+    color: #222222;
+    min-height: 270px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.projdiv h2 {
+  font-family: "PT Sans", sans-serif;
+  margin-bottom: 12px;
+}
+
+.projdiv img {
+  max-height: 270px;
+  max-width: 339px;
+  float: left;
+  margin-right: 32px;
+  width: 45%;
+}
+
+.projdiv p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.projdiv a {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+}
+
+.projdiv span {
+  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  margin-right: 16px;
+}
+
+footer {
+  text-align: center;
+  font-size: 11px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+footer p {
+  margin: 2px;
 }
