@@ -8,9 +8,12 @@ header {
   text-align: center;
 }
 
+h1 {text-align: center;}
+
 header h1 {
   margin-top: 28px;
   margin-bottom: 8px;
+  font-size: 48px;
 }
 
 header h5 {
@@ -50,6 +53,17 @@ nav a:active {
   color: #00ffff;
 }
 
+.aboutdiv {
+  background-color: #aaaaaa;
+  color: #222222;
+  width: 50%;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+  font-family: "Rokkitt";
+}
+
 .contentdiv {
   background-color: #aaaaaa;
   color: #222222;
@@ -66,11 +80,12 @@ nav a:active {
 .contentdiv img {
   float: left;
   width: 40%;
-  margin-right: 16px;
+  margin-right: 32px;
 }
 
 .contentdiv h2 {
   margin-top: 0px;
+  margin-bottom: 32px;
 }
 
 .contentdiv p {
@@ -79,10 +94,29 @@ nav a:active {
   font-family: "Rokkitt";
 }
 
+.contentdiv li {
+  font-family: "Rokkitt";
+}
+
 .contentdiv a {
   display: block;
   margin-top: 16px;
   margin-bottom: 16px;
+  text-decoration: none;
+  color: #222222;
+}
+
+.contentdiv a:visited {
+  color: #008888;
+}
+
+.contentdiv a:hover {
+  color: #009999;
+  text-decoration: underline;
+}
+
+.contentdiv a:active {
+  color: #00ffff;
 }
 
 footer {
