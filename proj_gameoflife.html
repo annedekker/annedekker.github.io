@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Anne Dekker</title>
+</head>
+<body>
+
+  <header>
+    <h1>A N N E</h1>
+    <h2>DEKKER.</h2>
+  </header>
+
+  <nav>
+    <a href="index.html">Projects</a>
+    <a href="about.html">About Me</a>
+  </nav>
+
+  <h2 class="pagetitle">G A M E . O F . L I F E</h2>
+
+  <div>
+    <img class="bigimg" src="images/gameoflifeinterface01.png" alt="A screenshot of the program">
+
+    <div class="contentdiv">
+      <h3>The Game of Life</h3>
+      <p>The Game of Life was invented by the British mathematician John Conway
+      in the 1970s. It goes as follows:</p>
+      <p>You start with an infinite grid of cells, that are either alive or dead. Then,
+      to create the pattern, you form each following generation according to these rules:<p>
+        <ul>
+          <li>If a live cell has less than 2 neighbours, it dies from underpopulation.</li>
+          <li>If a live cell has more than 3 neighbours, it dies from overpopulation.</li>
+          <li>If a dead cell has exactly 3 neighbours, it is born (again?).</li>
+        </ul>
+        <p>Other than that, you make no changes to the board. Aren't you happy you can have
+          a computer play this for you?</p>
+      <p>This type of game is known cellular automata, a simulation
+        ran on a grid of cells that turn on or off based on specific
+        rules, that together form a pattern. These games are studied
+        because of their computational power, their useability as physics
+        models, and for the study of patterns.</p>
+      <p>Most seeds (another word for starting pattern) won't turn into interesting shapes,
+          but some can spawn patterns that keep living for thousands of generations (these patterns
+          are known as methuselahs).</p>
+      <h3>The Program</h3>
+      <p>My implementation of the game was written in C# using WPF. It allows you to change the
+        rules and visuals as you wish, and supports turning cells on or off by clicking in the field.</p>
+      <a>See the github repo here</a>
+      <a>Or download the .exe here</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Anne Dekker (obviously) - 2018</p>
+  </footer>
+
+</body>

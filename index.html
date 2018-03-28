@@ -1,40 +1,59 @@
 <!DOCTYPE html>
-<html>
 <head>
   <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Anne Dekker</title>
 </head>
 <body>
+
   <header>
-    <h1>A D E M</h2>
-    <h5>ANNE M E DEKKER</h5>
+    <h1>A N N E</h1>
+    <h2>DEKKER.</h2>
   </header>
 
   <nav>
-    <a href="index.html">projects</a>
-    <a href="about.html">about me</a>
+    <a href="index.html">Projects</a>
+    <a href="about.html">About Me</a>
   </nav>
 
-  <h1>PROJECTS</h1>
-  
-  <div class="contentdiv">
+  <h2 class="pagetitle">P R O J E C T S</h2>
+
+  <div class="projdisplay">
+    <img src="images/chaos01.png">
+    <h3>CHAOS GAME</h3>
+    <div class="projtextdisplay">
+      <p>The chaos game is a method of generating fractals,
+      by deciding on a set of corners, and moving a point
+      a certain fraction of the distance between itself
+      and a random corner every turn.</p>
+      <p>The most famous fractal is the Sierpinski triangle,
+      but a variety of shapes can be created by changing the
+      settings. (The figure you see on the left is not a fractal,
+      it's just pretty).</p>
+    </div>
+    <a href="proj_chaosgame.html">Read More</a>
+    <a href="https://github.com/annedekker/ChaosGame">Github Repo</a>
+    <a href="downloads/chaosgamev0.5.zip">Download .exe</a>
+  </div>
+
+  <div class="projdisplay">
     <img src="images/gameoflife01.png">
-    <h2>CONWAY'S GAME OF LIFE</h2>
-    <p>The game of life, discovered by John H Conway in the 70s, is a kind of mathematical model, known as cellular automata.</p>
-    <p>Cellular automata are "played" on a grid of colored cells that evolve based on simple rules. They are useful as computational
-      engines, models of physics, and for the study of patterns, but they also just look cool. You don't really play so much as apply
-      the rules to make each new generation - which is quite tedious. Luckily, we have computers to do that for us, and we can just
-      sit back and watchen sie blinkenlights.</p>
-    <p>My implementation has been developed using C# and WPF, and is available as a portable .exe for the windows platform. It allows
-    for a wide variety of user input, including clicking cells on and off, changing the game rules, and various other options.</p>
-    <a href="downloads/Game of Life v0.1.exe">DOWNLOAD .EXE</a>
-    <a href="https://github.com/annedekker/GameOfLife">GITHUB REPO</a>
+    <h3>GAME OF LIFE</h3>
+    <div class="projtextdisplay">
+    <p>The game of life is a cellular automata, a simulation
+      ran on a grid of cells that turn on or off based on specific
+      rules, that together form a pattern. These games are studied
+      because of their computational power, their useability as physics
+      models, and for the study of patterns. Also, they look cool.</p>
+    </div>
+      <a href="proj_gameoflife.html">Read More</a>
+      <a href="https://github.com/annedekker/GameOfLife">Github Repo</a>
+      <a href="downloads/gameoflifev0.5.zip">Download .exe</a>
   </div>
 
   <footer>
-    <p>Anne Dekker - 2018</p>
+    <p>Anne Dekker (obviously) - 2018</p>
   </footer>
 
 </body>
-</html>
