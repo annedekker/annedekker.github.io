@@ -20,10 +20,41 @@
   <h2 class="pagetitle">C H A O S . G A M E</h2>
 
   <div>
-    <img class="bigimg" src="images/chaosinterface01.png" alt="A screenshot of the program">
+    <img class="bigimg" src="images/chaosinterface01.png" alt="Image: A screenshot of the program">
 
     <div class="contentdiv">
-
+      <h3>The Chaos Game</h3>
+      <p>The chaos game is an algorithm described by the British mathematician Michael Barnsley
+        in 1988. The rules are as follows:
+        <ul>
+          <li>Decide on a polgyon.</li>
+          <li>Place a point at random inside the polgyon.</li>
+          <li>For every turn, choose one of the corners of the polygon at random, and move
+            the point a percentage of the distance to the corner.</li>
+          <li>Repeat the previous step indefinitely.</li>
+        </ul>
+        <p>Optionally, you can also restrict the corner selection process, by excluding
+        corners that are a certain amount of positions away from the corner(s) the point
+      last moved towards.</p>
+      <p>This game is fun to play because it results in pretty patterns, and some of those
+        patterns are fractals.</p>
+      <p>Fractals are never-ending patterns, that display the same type of structure on all
+        levels (something that kind of looks like a fern on a big scale will be made of tiny
+        ferns when you zoom in). Fractals are interesting because they contain indefinite
+        complexity based on a simple instruction, in a way somewhat similar to early, primitive
+        forms of life. Indeed, there are many fractals that look like plants. They are used
+        to stimulate situations that aren't suited to exact measurement, like many in nature
+        are. (Think, for example, about a coastline. If you're making a map, and you want to
+        be as precise as possible, you'll have to map every centimeter by hand - and then
+        start over the next day because it changed.)
+        <p>When you play the game with the most famous settings (3 corners in a circle,
+          move 50% of the distance) you create a fractal known as the Sierpinski triangle,
+          the image you see at the top of this page.</p>
+      <h3>The Program</h3>
+      <p>My implementation was written in C# using WPF, and allows for a wide range of settings
+        as well as exporting the result as an image.</p>
+      <a href="https://github.com/annedekker/ChaosGame">See the github repo here</a>
+      <a href="downloads/chaosgame.zip">Or download the .exe here</a>
     </div>
   </div>
 
