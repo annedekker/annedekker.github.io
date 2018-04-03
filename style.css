@@ -154,3 +154,7 @@ footer {
   background: #2c2c2c;
   color: #00ffff;
 }
+
+.strikethrough {
+  text-decoration: line-through;
+}
