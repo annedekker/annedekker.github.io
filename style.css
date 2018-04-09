@@ -129,6 +129,7 @@ footer {
 }
 
 .contentdiv {
+  overflow: auto;
   margin: 32px;
   width: 80%;
   margin-left: auto;
@@ -139,6 +140,22 @@ footer {
   background: #dddddd;
   color: #000000;
   font-family: "Rokkitt", serif;
+}
+
+.imgitem {
+  overflow: auto;
+  width: 70%;
+  min-width: 300px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.imgitem img {
+  width: 128px;
+  padding: 6px;
+  background-color: #222222;
+  float: left;
+  margin-right: 32px;
 }
 
 .contentdiv h3 {
@@ -163,4 +180,10 @@ footer {
 
 .strikethrough {
   text-decoration: line-through;
+}
+
+.smallnote {
+  margin-left: 8px;
+  max-width: 264px;
+  font-size: 12px;
 }

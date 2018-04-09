@@ -24,37 +24,65 @@
 
     <div class="contentdiv">
       <h3>The Chaos Game</h3>
-      <p>The chaos game is an algorithm described by the British mathematician Michael Barnsley
-        in 1988. The rules are as follows:
+      <p>This is not actually a game, it's a mathematical simulation that often generates a
+        special shape called a fractal, a pattern that is similar on every scale (and therefore
+        scales indefinitely). When played with the original rules the game results in a fractal
+        called the Sierpinsky triangle, which you can see above.</p>
+        <p>The original game goes as follows:</p>
         <ul>
-          <li>Decide on a polgyon.</li>
-          <li>Place a point at random inside the polgyon.</li>
-          <li>For every turn, choose one of the corners of the polygon at random, and move
-            the point a percentage of the distance to the corner.</li>
-          <li>Repeat the previous step indefinitely.</li>
+          <li>Determine 3 points on a circle, with equal distances from another (so, a triangle).
+          These are your corners.</li>
+          <li>Place a point at some random location inside the circle.</li>
+          <li>For each turn, pick one of the corners at random, and move the point half of the
+          total distance towards it.</li>
+          <li>Repeat indefinitely.</li>
         </ul>
-        <p>Optionally, you can also restrict the corner selection process, by excluding
-        corners that are a certain amount of positions away from the corner(s) the point
-      last moved towards.</p>
-      <p>This game is fun to play because it results in pretty patterns, and some of those
-        patterns are fractals.</p>
-      <p>Fractals are never-ending patterns, that display the same type of structure on all
-        levels (something that kind of looks like a fern on a big scale will be made of tiny
-        ferns when you zoom in). Fractals are interesting because they contain indefinite
-        complexity based on a simple instruction, in a way somewhat similar to early, primitive
-        forms of life. Indeed, there are many fractals that look like plants. They are also used
-        to stimulate situations that aren't suited to exact measurement, like many in nature
-        are. (Think, for example, about a coastline. If you're making a map, and you want to
-        be as precise as possible, you'll have to map every centimeter by hand - and then
-        start over the next day because it changed.)</p>
-        <p>When you play the game with the most famous settings (3 corners in a circle,
-          move 50% of the distance) you create a fractal known as the Sierpinski triangle,
-          the image you see at the top of this page.</p>
-      <h3>The Program</h3>
-      <p>My implementation was written in C# using WPF, and allows for a wide range of settings
-        as well as exporting the result as an image.</p>
+        <p>Aren't you lucky you have a computer to play this for you?</p>
+      <h3>Recommended Settings</h3>
+      <p>The game wouldn't be very interesting if you could only make one shape. Following are
+        some good settings people have found. Of course many, many more shapes are possible,
+        so have fun exploring!</p>
+      <div class="imgitem">
+        <img src="images/chaos01.png">
+        <p>This image is not a fractal, but it's pretty nonetheless. To generate it: </p>
+        <ul>
+          <li>Set amount of corners to 6.</li>
+        </ul>
+      </div>
+      <div class="imgitem">
+        <img src="images/chaos03.png">
+        <p>To generate this shape: </p>
+        <ul>
+          <li>Set amount of corners to 9</li>
+          <li>Set distance moved to 66%</li>
+          <li>Set exclude from last n corners to 1</li>
+          <li>Exclude position 0, 1, and 2</li>
+        </ul>
+      </div>
+      <div class="imgitem">
+        <img src="images/chaos02.png">
+        <p>For this shape:</p>
+        <ul>
+          <li>Set amount of corners to 4</li>
+          <li>Set exclude last n corners to 1</li>
+          <li>Exclude the second position</li>
+        </ul>
+      </div>
+      <h4>A Note on Exclusion Rules</h4>
+      <p>You might be wondering what "exclude last n corners" means. When choosing a random corner,
+        you can tell the computer to ignore certain corners.</p>
+      <p>Exclude from last n corners is the amount of corners remembered. If you set it to 2, the game
+          will compare exclude positions against the last 2 chosen corners.</p>
+      <p>Exclude positions are the illegal indexes. Assuming you've set exclusion to clockwise,
+      every position that matches a last corner + exclude position is filtered out.</p>
+      <p>So, if your last corner was 1, and your exclude position is 2, corner 3 is now no longer valid.</p>
+      <p>It is possible to set the exclusion rules in such a way that there are no valid corners left. If
+        you're generating but you're not getting any shape, check your exclusion rules.</p>
+      <p>Enjoy!</p>
       <a href="https://github.com/annedekker/ChaosGame">See the github repo here</a>
       <a href="downloads/chaosgame.zip">Or download the .exe here</a>
+      <p class="smallnote">Although the program is entirely functional, it is a prototype version. As such,
+      there are a few small bugs that will be fixed in a later version. Sorry for the inconvience!</p>
     </div>
   </div>
 
